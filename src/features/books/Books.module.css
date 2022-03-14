@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.title {
+    width: 50%;
+}
+
+.author {
+    width: 30%;
+}
+
+.type {
+    width: 8%;
+}
+
+.isbn {
+    width: 12%;
+}
+
+.authorBtn {
+    background: none;
+    border: none;
+    color: #1976d2;
+    cursor: pointer;
+    text-decoration: underline;
+}

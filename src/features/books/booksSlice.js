@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { getBooks, getAuthor } from './counterAPI';
+import { getBooks, getAuthor } from './booksAPI';
 
 const initialState = {
   data: [],

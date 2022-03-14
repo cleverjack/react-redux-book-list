@@ -2,7 +2,11 @@
 import axios from 'axios';
 
 export function getBooks(q, page = 1) {
-  return axios.get(`http://openlibrary.org/search.json?q=${q}&page=${page}`);
+  let url = `http://openlibrary.org/search.json?title=a&page=${page}`
+  if (q) {
+    url = `http://openlibrary.org/search.json?title=${q}&page=${page}`
+  }
+  return axios.get(url);
 }
 
 export function getAuthor(key) {
